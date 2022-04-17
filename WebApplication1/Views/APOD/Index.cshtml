@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>APOD - @ViewData["APOD"]</h2>
+
+
+<p">Date: @ViewData["Date"]</p">
+<p>Explanation: @ViewData["explanation"]</p>
+
+<p>Title: @ViewData["title"]</p>
+<p>Url: @ViewData["url"]</p>
+
+<br />
+<br />
+
+<img src=@ViewData["hdurl"] />
+@ViewData["body"]
+
